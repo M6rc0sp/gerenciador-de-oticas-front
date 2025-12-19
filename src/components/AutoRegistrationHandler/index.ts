@@ -1,0 +1,1 @@
+export { AutoRegistrationHandler } from './AutoRegistrationHandler';
