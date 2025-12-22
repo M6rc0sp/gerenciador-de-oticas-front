@@ -2,8 +2,8 @@ module.exports = {
     apps: [{
         name: "gerenciador-oticas-front",
         cwd: "/home/documents/mvl/gerenciador-de-oticas-front",
-        script: "/usr/local/bin/serve",
-        args: ["-s", "dist", "-l", "10003"],
+        script: "./start.sh",
+        interpreter: "bash",
         env_production: {
             NODE_ENV: "production"
         }
