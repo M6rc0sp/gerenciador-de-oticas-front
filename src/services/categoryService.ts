@@ -5,7 +5,9 @@ export const categoryService = {
     async getAll(): Promise<Category[]> {
         try {
             const response = await axios.get('/categories');
-            return response.data;
+            // Garantir que sempre retorna array, mesmo se a API retornar objeto
+            const data = response.data;
+            return Array.isArray(data) ? data : (data?.data || data?.categories || []);
         } catch (error) {
             console.error('Error fetching categories:', error);
             throw error;

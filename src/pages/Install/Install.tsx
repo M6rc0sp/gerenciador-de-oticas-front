@@ -27,6 +27,7 @@ const Install: React.FC = () => {
 
                     // Fazer a chamada para o endpoint da API
                     const response = await axiosStandard.get(`${API_URL}/ns/install?code=${code}`, {
+                        withCredentials: true,
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
@@ -34,8 +35,14 @@ const Install: React.FC = () => {
                     });
                     console.log('Instalação finalizada:', response);
 
-                    setStatus('success');
-                    setMessage('Instalação concluída com sucesso! Redirecionando de volta pra loja...');
+                    if (response.data && response.data.success) {
+                        setStatus('success');
+                        setMessage('Instalação concluída com sucesso! Redirecionando de volta pra loja...');
+                    } else {
+                        setStatus('error');
+                        setMessage(`Erro: ${response.data?.message || 'Falha na instalação'}`);
+                        return;
+                    }
 
                     // Redirecionar para a página de login da Nuvemshop após a instalação
                     setTimeout(() => {
