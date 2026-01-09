@@ -36,7 +36,7 @@ const Install: React.FC = () => {
 
                     // Redirecionar para a página de login da Nuvemshop após a instalação
                     setTimeout(() => {
-                        window.location.href = 'http://nuvemshop.com.br/login';
+                        window.location.href = 'https://www.nuvemshop.com.br/login';
                     }, 3000);
                 } else {
                     console.error('Código de instalação não encontrado');
@@ -86,7 +86,7 @@ const Install: React.FC = () => {
                     <Box display="flex" gap="2" justifyContent="flex-end">
                         <Button
                             appearance="primary"
-                            onClick={() => (window.location.href = 'http://nuvemshop.com.br/login')}
+                            onClick={() => (window.location.href = 'https://www.nuvemshop.com.br/login')}
                         >
                             Ir para login
                         </Button>
