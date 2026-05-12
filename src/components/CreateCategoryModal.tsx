@@ -13,8 +13,7 @@ interface CreateCategoryModalProps {
 }
 
 const SECTION_OPTIONS = [
-    { label: 'Tipo', value: 'tipo' },
-    { label: 'Espessura', value: 'espessura' },
+    { label: 'Filtro', value: 'filtro' },
     { label: 'Produto', value: 'produto' },
 ];
 
