@@ -1,6 +1,6 @@
-# Gerenciador de Óticas - Frontend
+# Meu Filtro - Frontend
 
-Frontend moderno em React/TypeScript para o Gerenciador de Óticas, integrado com Nimbus Design System da Nuvemshop.
+Frontend moderno em React/TypeScript para o Meu Filtro, integrado com Nimbus Design System da Nuvemshop.
 
 ## 📋 Funcionalidades
 

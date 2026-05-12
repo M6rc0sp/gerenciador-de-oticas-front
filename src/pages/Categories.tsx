@@ -263,7 +263,7 @@ const Categories: React.FC = () => {
             <Box display="flex" justifyContent="space-between" alignItems="center" marginBottom="6">
                 <Box>
                     <Text fontWeight="bold" fontSize="highlight">
-                        Gerenciador de Óticas
+                        Meu Filtro
                     </Text>
                     <Text>Gerencie suas categorias</Text>
                 </Box>

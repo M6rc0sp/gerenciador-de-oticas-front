@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
     'pt-BR': {
         translation: {
-            'categories.title': 'Gerenciador de Óticas',
+            'categories.title': 'Meu Filtro',
             'categories.subtitle': 'Suas Categorias',
             'categories.empty': 'Nenhuma categoria criada ainda.',
             'categories.create': 'Nova Categoria',
