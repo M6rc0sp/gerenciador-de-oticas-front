@@ -72,37 +72,39 @@ const Install: React.FC = () => {
             padding="4"
             backgroundColor="primary-surface"
         >
-            <Card padding="small">
-                <Box marginBottom="4">
-                    <Text fontWeight="bold">Instalação do Aplicativo</Text>
-                </Box>
-                <Box
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    gap="4"
-                    padding="4"
-                >
-                    {status === 'loading' && <Spinner size="medium" />}
-
-                    <Text
-                        textAlign="center"
-                        fontWeight={status === 'error' ? 'bold' : 'regular'}
-                    >
-                        {message}
-                    </Text>
-                </Box>
-                {status === 'error' && (
-                    <Box display="flex" gap="2" justifyContent="flex-end">
-                        <Button
-                            appearance="primary"
-                            onClick={() => (window.location.href = 'https://www.nuvemshop.com.br/login')}
-                        >
-                            Ir para login
-                        </Button>
+            <Box width="100%" maxWidth="800px">
+                <Card padding="small">
+                    <Box marginBottom="4">
+                        <Text fontWeight="bold">Instalação do Aplicativo</Text>
                     </Box>
-                )}
-            </Card>
+                    <Box
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        gap="4"
+                        padding="4"
+                    >
+                        {status === 'loading' && <Spinner size="medium" />}
+
+                        <Text
+                            textAlign="center"
+                            fontWeight={status === 'error' ? 'bold' : 'regular'}
+                        >
+                            {message}
+                        </Text>
+                    </Box>
+                    {status === 'error' && (
+                        <Box display="flex" gap="2" justifyContent="flex-end">
+                            <Button
+                                appearance="primary"
+                                onClick={() => (window.location.href = 'https://www.nuvemshop.com.br/login')}
+                            >
+                                Ir para login
+                            </Button>
+                        </Box>
+                    )}
+                </Card>
+            </Box>
         </Box>
     );
 };
