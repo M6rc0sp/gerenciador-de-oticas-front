@@ -1,4 +1,4 @@
-﻿module.exports = {
+module.exports = {
     apps: [{
         name: "gerenciador-oticas-front",
         cwd: "/home/documents/mvl/ns-meu-filtro-front",
